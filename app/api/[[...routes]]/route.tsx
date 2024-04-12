@@ -122,15 +122,16 @@ app.frame('/degen', (c) => {
                 imageAspectRatio: '1:1',
                 image: pfpUrl,
                 imageOptions: { width: 1200, height: 630 },
-                intents: [<Button>You have 0 degen in your connected account. You have to get more degen </Button>],
+                // intents: [<Button>You have 0 degen in your connected account. You have to get more degen </Button>],
+                intents: [<Button>Print my image </Button>],
               })
             } else {
               console.log("HUAT LA");
               return c.res({
-                action: '/printdegenimage',
+                action: '/',
                 imageAspectRatio: '1:1',
-                image: `https://frog-frame-ten.vercel.app/NC_State_Wolfpack_logo.svg.png`,
-                intents: [<Button>Print my image 🏀 </Button>],
+                image: `https://frog-frame-ten.vercel.app/dog.jpg`,
+                intents: [<Button>Print my image </Button>],
               })
             }
           })
@@ -179,7 +180,6 @@ app.frame('/', (c) => {
     imageAspectRatio :'1:1',
     image: `https://base-hack.vercel.app/degenhat.jpeg`,
     action: '/degen',
-    title: '🏀 Final 4 predictions? 🏆',
     intents: [
       <Button value="DEGEN">GMDegened</Button>
     ],
