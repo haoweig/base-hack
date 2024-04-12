@@ -120,7 +120,7 @@ app.frame('/degen', (c) => {
               return c.res({
                 action: '/',
                 imageAspectRatio: '1:1',
-                image: 'https://frog-frame-ten.vercel.app/dog.jpg',
+                image: 'https://base-hack.vercel.app/dog.jpg',
                 imageOptions: { width: 1200, height: 630 },
                 // intents: [<Button>You have 0 degen in your connected account. You have to get more degen </Button>],
                 intents: [<Button>You have 0 degen in your connected account. You have to get more degen</Button>],
@@ -130,7 +130,7 @@ app.frame('/degen', (c) => {
               return c.res({
                 action: '/',
                 imageAspectRatio: '1:1',
-                image: `https://frog-frame-ten.vercel.app/dog.jpg`,
+                image: `https://base-hack.vercel.app/dog.jpg`,
                 intents: [<Button>Print my image </Button>],
               })
             }
