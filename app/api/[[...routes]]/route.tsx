@@ -100,8 +100,8 @@ app.frame('/printdegenimage', (c) => {
 app.frame('/degen', (c) => {
   const { buttonValue, inputText, status,frameData } = c
   // gets the first connected address
-  // const fid = frameData?.fid?? 0; // Providing a default value of 0 if fid is undefined
-  let fid = 376075;
+  const fid = frameData?.fid?? 0; // Providing a default value of 0 if fid is undefined
+  // let fid = 376075;
   console.log("Fid is ",fid)
   return getConnectedAddress(fid)
     .then(firstAddress => {
