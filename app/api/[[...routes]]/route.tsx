@@ -121,7 +121,7 @@ app.frame('/degen', (c) => {
                 imageAspectRatio: '1:1',
                 image: pfpUrl,
                 imageOptions: { width: 1200, height: 630 },
-                intents: [<Button>You have to get more degen🏀 </Button>],
+                intents: [<Button>You have 0 degen in your connected account. You have to get more degen </Button>],
               })
             } else {
               console.log("HUAT LA");
@@ -176,7 +176,7 @@ app.frame('/', (c) => {
 
   return c.res({
     imageAspectRatio :'1:1',
-    image: `/degen.webp`,
+    image: `https://base-hack.vercel.app/degen.webp`,
     action: '/degen',
     title: '🏀 Final 4 predictions? 🏆',
     intents: [
