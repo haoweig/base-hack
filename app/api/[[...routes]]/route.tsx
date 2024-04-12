@@ -111,6 +111,7 @@ app.frame('/degen', (c) => {
 
         return getProfilePic(fid).then((pfpUrl)=>{
           console.log("I am here and got profile pic url",pfpUrl);
+
           return checkDegenBalance(firstAddress).then((value)=>{
             // val is the degen bal of the first address
             console.log("This is ur degen bala val",value)
@@ -176,7 +177,7 @@ app.frame('/', (c) => {
 
   return c.res({
     imageAspectRatio :'1:1',
-    image: `https://base-hack.vercel.app/degen.webp`,
+    image: `https://base-hack.vercel.app/degenhat.jpeg`,
     action: '/degen',
     title: '🏀 Final 4 predictions? 🏆',
     intents: [
