@@ -120,10 +120,10 @@ app.frame('/degen', (c) => {
               return c.res({
                 action: '/',
                 imageAspectRatio: '1:1',
-                image: pfpUrl,
+                image: 'https://frog-frame-ten.vercel.app/dog.jpg',
                 imageOptions: { width: 1200, height: 630 },
                 // intents: [<Button>You have 0 degen in your connected account. You have to get more degen </Button>],
-                intents: [<Button>Print my image </Button>],
+                intents: [<Button>You have 0 degen in your connected account. You have to get more degen</Button>],
               })
             } else {
               console.log("HUAT LA");
